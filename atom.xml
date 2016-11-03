@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://innote.github.io/"/>
-  <updated>2016-11-03T14:47:43.875Z</updated>
+  <updated>2016-10-30T07:39:11.890Z</updated>
   <id>http://innote.github.io/</id>
   
   <author>
@@ -14,6 +14,94 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Introduction to openFrameworks on vision and automation world.</title>
+    <link href="http://innote.github.io/2016/11/03/OpenFrameworks/"/>
+    <id>http://innote.github.io/2016/11/03/OpenFrameworks/</id>
+    <published>2016-11-03T15:26:47.087Z</published>
+    <updated>2016-10-30T07:39:11.890Z</updated>
+    
+    <content type="html"><![CDATA[<p>As an <strong>AOI and automation</strong> engineer, I often deal with <strong>OpenGL, OpenCV and other C + + library</strong>. These libraries having different rules and usage; in addition, the preparation of the interface is also a routine work in order to make an own programs with more interactive capabilities. However, with the increase of engineering complexity, the management and maintenance of the library becomes more and more difficult. On other hand, the addition and deletion of the library will not only increase the learning cost, but also affect the logical layer of the entire system. so, if you want to make your project easy to maintain, it is necessary to use the design pattern as much as possible, so that the separation of logic and interface will more easy to maintain. But for scientific research, blindly into the shackles of design patterns will lead to premature optimization of the problem, affecting the progress of scientific research. Until then, I came accross with <strong>openFrameworks</strong>.</p>
+<h2 id="What-is-openFrameworks"><a href="#What-is-openFrameworks" class="headerlink" title="What is openFrameworks"></a><strong>What is openFrameworks</strong></h2><p>openFrameworks is an open source C++ toolkit designed to assist the creative process by providing a simple and intuitive framework for experimentation.</p>
+<p>openFrameworks is designed to work as a general purpose glue, and wraps together several commonly used libraries, including:</p>
+<ul>
+<li><a href="http://www.opengl.org/" target="_blank" rel="external">OpenGL</a>, <a href="http://glew.sourceforge.net/" target="_blank" rel="external">GLEW</a>, <a href="http://www.opengl.org/resources/libraries/glut/" target="_blank" rel="external">GLUT</a>, <a href="https://code.google.com/p/libtess2/" target="_blank" rel="external">libtess2</a> and <a href="http://cairographics.org/" target="_blank" rel="external">cairo</a> for graphics</li>
+<li><a href="http://www.music.mcgill.ca/~gary/rtaudio/" target="_blank" rel="external">rtAudio</a>, <a href="http://www.portaudio.com/" target="_blank" rel="external">PortAudio</a>, <a href="http://http//connect.creativelabs.com/openal" target="_blank" rel="external">OpenAL</a> and <a href="http://kissfft.sourceforge.net/" target="_blank" rel="external">Kiss FFT</a> or <a href="http://www.fmod.org/" target="_blank" rel="external">FMOD</a> for audio input, output and analysis</li>
+<li><a href="http://freetype.sourceforge.net/index2.html" target="_blank" rel="external">FreeType</a> for fonts</li>
+<li><a href="http://freeimage.sourceforge.net/" target="_blank" rel="external">FreeImage</a> for image saving and loading</li>
+<li><a href="http://developer.apple.com/quicktime/" target="_blank" rel="external">Quicktime</a>, <a href="http://gstreamer.freedesktop.org/" target="_blank" rel="external">GStreamer</a> and <a href="https://github.com/ofTheo/videoInput" target="_blank" rel="external">videoInput</a> for video playback and grabbing</li>
+<li><a href="http://pocoproject.org/" target="_blank" rel="external">Poco</a> for a variety of utilities</li>
+<li><a href="http://opencv.org/" target="_blank" rel="external">OpenCV</a> for computer vision</li>
+<li><a href="http://assimp.sourceforge.net/" target="_blank" rel="external">Assimp</a> for 3D model loading</li>
+</ul>
+<p>While these libraries follow different rules and usage, oF provides a common interface on top of them, making it easy to use them.</p>
+<p>In addition, oF Another bright spot is that it has a good cross-platform features. At present, it supports five operating systems (Windows, OSX, Linux, iOS, Android) and four integrated development environment (XCode, qt creator, Visual Studio, Eclipse).</p>
+<h2 id="Install-and-configure-openFrameworks"><a href="#Install-and-configure-openFrameworks" class="headerlink" title="Install and configure openFrameworks"></a><strong>Install and configure openFrameworks</strong></h2><p>The following describes how to install and configure oF under Linux.</p>
+<h3 id="Download-openFrameworks"><a href="#Download-openFrameworks" class="headerlink" title="Download openFrameworks"></a><strong>Download openFrameworks</strong></h3><p>Visit <a href="http://openframeworks.cc/download/" target="_blank" rel="external">oF’s official download page</a> and find the version that applies to your operating system and IDE. Click Download. For example, my computer is a Linux Ubuntu 64-bit system and qt creator is my IDE, so I chose <strong><a href="http://openframeworks.cc/versions/v0.9.6/of_v0.9.6_linux64_release.tar.gz" target="_blank" rel="external">Linux 64bit</a></strong>, and the setup guide of <strong><a href="http://openframeworks.cc/setup/qtcreator" target="_blank" rel="external">qt creator</a></strong>.</p>
+<h3 id="Install-Dependencies"><a href="#Install-Dependencies" class="headerlink" title="Install Dependencies"></a><strong>Install Dependencies</strong></h3><p>Download is complete, extract it, open the terminal, <code>cd</code> to extract the directory, for example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ /home/thyeun/OF</div></pre></td></tr></table></figure>
+<p>After that, depending on your Linux distribution, <code>cd</code> into scripts / linux / &lt;<em>operating system release name</em>&gt;, for example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cd scripts/linux/ubuntu</div></pre></td></tr></table></figure>
+<p>Execute two commands for install openFrameworks dependencies (requires root privileges):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo ./install_dependencies.sh</div><div class="line">$ sudo ./install_codecs.sh</div></pre></td></tr></table></figure>
+<h3 id="Compiler-oF"><a href="#Compiler-oF" class="headerlink" title="Compiler oF"></a><strong>Compiler oF</strong></h3><p>After installing dependencies, return to the previous directory:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cd ..</div></pre></td></tr></table></figure>
+<p>Execute compiler oF:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./compileOF.sh</div></pre></td></tr></table></figure>
+<h3 id="Compile-the-project-builder"><a href="#Compile-the-project-builder" class="headerlink" title="Compile the project builder"></a><strong>Compile the project builder</strong></h3><p>In order to facilitate the creation of future projects, oF also provides a project generator projectGenerator. It is also required to compile before using it. Go back to the directory where the <code>compileOF.sh</code> script is located and type the following command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./compilePG.sh</div></pre></td></tr></table></figure>
+<p>After the completion of installation of <code>compilePG.sh</code>,  go back to the root directory of oF, and look for projectGenerator directory, which can be found inside the projectGenerator, we can implement it:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd ../../projectGenerator</div><div class="line">$ ./projectGenerator</div></pre></td></tr></table></figure>
+<p><img src="/hexo/uploads/openFrameworks/pg.jpg" alt="image"></p>
+<p>Click on the bottom left corner of the <strong>GENERATE</strong> button, it will specified the path to generate a project path, as shown above picture is / home / thyeun / OF / apps / myApps / mySketch:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ /home/thyeun/OF/apps/myApps/mySketch</div><div class="line">$ ls</div><div class="line">addons.make  bin  config.make  Makefile  mySketch.qbs  mySketch.qbs.user  src</div></pre></td></tr></table></figure>
+<p>among them: </p>
+<ul>
+<li><p><code>Addons.make</code> file - a list of plug-ins that are used to maintain this project;</p>
+</li>
+<li><p><code>Config.make</code> file - used to add a search path, modify the optimization tag, and other settings;</p>
+</li>
+<li><p><code>Makefile</code> - Makefile of the project, generally do not need to directly modify it.</p>
+<p>  In oF, The goals of make include:</p>
+<ul>
+<li><p><strong>Debug</strong>: Generates an executable program with debugging flags;</p>
+</li>
+<li><p><strong>Release</strong>: generates compiler-optimized executables;</p>
+</li>
+<li><p><strong>Clean</strong>: clear target files and executable programs;</p>
+</li>
+<li><p><strong>CleanDebug</strong>: only clear the debug target of the generated results;</p>
+</li>
+<li><p><strong>CleanRelease</strong>: only release the release target of the generated results;</p>
+</li>
+<li><p><strong>Help</strong>: print help information;</p>
+</li>
+<li><p><strong>Run</strong>: Executes the generated executable.</p>
+</li>
+</ul>
+</li>
+<li><p><code>MySketch.qbs</code> and <code>mySketch.qbs.user</code> file - qt creator project files.</p>
+</li>
+</ul>
+<h3 id="Template-installation-for-qt-Creator"><a href="#Template-installation-for-qt-Creator" class="headerlink" title="Template installation for qt Creator"></a><strong>Template installation for qt Creator</strong></h3><p>After finish the installation of dependencies and compiler, than <code>cd</code> to scripts / qtcreator, for install qt creator template.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cd scripts/qtcreator</div></pre></td></tr></table></figure>
+<p>Execute the commands for the template installation for qt creator</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo ./install_template.sh</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;As an &lt;strong&gt;AOI and automation&lt;/strong&gt; engineer, I often deal with &lt;strong&gt;OpenGL, OpenCV and other C + + library&lt;/strong&gt;. These libr
+    
+    </summary>
+    
+      <category term="openFrameworks" scheme="http://innote.github.io/categories/openFrameworks/"/>
+    
+    
+      <category term="openFrameworks" scheme="http://innote.github.io/tags/openFrameworks/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
