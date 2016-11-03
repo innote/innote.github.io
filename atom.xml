@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://innote.github.io/"/>
-  <updated>2016-11-03T15:28:30.878Z</updated>
+  <updated>2016-11-03T15:32:00.123Z</updated>
   <id>http://innote.github.io/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>Introduction to openFrameworks on vision and automation world.</title>
     <link href="http://innote.github.io/2016/11/03/OpenFrameworks/"/>
     <id>http://innote.github.io/2016/11/03/OpenFrameworks/</id>
-    <published>2016-11-03T15:28:30.878Z</published>
-    <updated>2016-11-03T15:28:30.878Z</updated>
+    <published>2016-11-03T15:32:00.123Z</published>
+    <updated>2016-11-03T15:32:00.123Z</updated>
     
     <content type="html"><![CDATA[<p>As an <strong>AOI and automation</strong> engineer, I often deal with <strong>OpenGL, OpenCV and other C + + library</strong>. These libraries having different rules and usage; in addition, the preparation of the interface is also a routine work in order to make an own programs with more interactive capabilities. However, with the increase of engineering complexity, the management and maintenance of the library becomes more and more difficult. On other hand, the addition and deletion of the library will not only increase the learning cost, but also affect the logical layer of the entire system. so, if you want to make your project easy to maintain, it is necessary to use the design pattern as much as possible, so that the separation of logic and interface will more easy to maintain. But for scientific research, blindly into the shackles of design patterns will lead to premature optimization of the problem, affecting the progress of scientific research. Until then, I came accross with <strong>openFrameworks</strong>.</p>
 <h2 id="What-is-openFrameworks"><a href="#What-is-openFrameworks" class="headerlink" title="What is openFrameworks"></a><strong>What is openFrameworks</strong></h2><p>openFrameworks is an open source C++ toolkit designed to assist the creative process by providing a simple and intuitive framework for experimentation.</p>
@@ -53,7 +53,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./compilePG.sh</div></pre></td></tr></table></figure>
 <p>After the completion of installation of <code>compilePG.sh</code>,  go back to the root directory of oF, and look for projectGenerator directory, which can be found inside the projectGenerator, we can implement it:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd ../../projectGenerator</div><div class="line">$ ./projectGenerator</div></pre></td></tr></table></figure>
-<p><img src="uploads/openFrameworks/pg.jpg" alt="image"></p>
+<p><img src="/uploads/openFrameworks/pg.jpg" alt="image"></p>
 <p>Click on the bottom left corner of the <strong>GENERATE</strong> button, it will specified the path to generate a project path, as shown above picture is / home / thyeun / OF / apps / myApps / mySketch:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ /home/thyeun/OF/apps/myApps/mySketch</div><div class="line">$ ls</div><div class="line">addons.make  bin  config.make  Makefile  mySketch.qbs  mySketch.qbs.user  src</div></pre></td></tr></table></figure>
 <p>among them: </p>
