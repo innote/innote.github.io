@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://innote.github.io/"/>
-  <updated>2016-11-03T15:32:00.123Z</updated>
+  <updated>2016-11-03T23:10:41.909Z</updated>
   <id>http://innote.github.io/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>21世紀的健康飲食</title>
+    <link href="http://innote.github.io/2016/11/04/health/"/>
+    <id>http://innote.github.io/2016/11/04/health/</id>
+    <published>2016-11-03T23:10:41.909Z</published>
+    <updated>2016-11-03T23:10:41.909Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="魚類"><a href="#魚類" class="headerlink" title="魚類"></a><strong>魚類</strong></h3><p>魚是人體必需的Omega-3脂肪酸重要來源，能保護心臟健康，讓血液保持流動，更有助於腦部、眼睛及降低發炎反應。高發炎反應是許多慢性疾病的特點，例如關節炎、心臟疾病及阿茲海默症等，因此控制發炎可能是年老仍保健康的重要關鍵。</p>
+<h3 id="味噌"><a href="#味噌" class="headerlink" title="味噌"></a><strong>味噌</strong></h3><p>由黃豆發酵製成的味噌，富含對女性有益處的異黃酮（Isoflavone），可幫助停經後的女性降低乳癌及子宫内膜癌風險。</p>
+<h3 id="昆布"><a href="#昆布" class="headerlink" title="昆布"></a><strong>昆布</strong></h3><p>昆布俗稱海帶，富含礦物質碘、鋅、鎂、鈣、鉀等，以及人體免疫系統、抗氧化和心臟健康所需等數十種礦物質。</p>
+<h3 id="抹茶"><a href="#抹茶" class="headerlink" title="抹茶"></a><strong>抹茶</strong></h3><p>抹茶富含兒茶素（Catechin），是對身體有益的抗氧化物質，可能有助於抵抗退化症狀，例如阿茲海默症、心臟疾病甚至癌症。此外，抹茶具有高量茶氨酸（L-Theanine），有助放鬆心神、減緩壓力。</p>
+<h3 id="醬菜"><a href="#醬菜" class="headerlink" title="醬菜"></a><strong>醬菜</strong></h3><p>傳統發酵的醬菜，是天然益生菌的重要來源，可促進人體消化與吸收系統。但巴恩斯也提醒，部分店家販售的可能不是傳統發酵醬菜，只是加了醋和鹽巴，多經殺菌處理過以利長期保存，多吃無益。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;魚類&quot;&gt;&lt;a href=&quot;#魚類&quot; class=&quot;headerlink&quot; title=&quot;魚類&quot;&gt;&lt;/a&gt;&lt;strong&gt;魚類&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;魚是人體必需的Omega-3脂肪酸重要來源，能保護心臟健康，讓血液保持流動，更有助於腦部、眼睛及降低發炎反
+    
+    </summary>
+    
+      <category term="food" scheme="http://innote.github.io/categories/food/"/>
+    
+    
+      <category term="food" scheme="http://innote.github.io/tags/food/"/>
+    
+  </entry>
   
   <entry>
     <title>Introduction to openFrameworks on vision and automation world.</title>
