@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://innote.github.io/"/>
-  <updated>2016-11-22T02:05:11.208Z</updated>
+  <updated>2016-11-22T15:59:44.411Z</updated>
   <id>http://innote.github.io/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>Vision Solution Principles</title>
     <link href="http://innote.github.io/2016/11/22/Vision%20Solution/"/>
     <id>http://innote.github.io/2016/11/22/Vision Solution/</id>
-    <published>2016-11-22T02:05:11.208Z</published>
-    <updated>2016-11-22T02:05:11.208Z</updated>
+    <published>2016-11-22T15:59:44.411Z</published>
+    <updated>2016-11-22T15:59:44.411Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Vision-Solution-Principles"><a href="#Vision-Solution-Principles" class="headerlink" title="Vision Solution Principles"></a><strong>Vision Solution Principles</strong></h2><p>Choosing and implementing machine vision technology involves the following questions:</p>
 <ol>
@@ -35,7 +35,8 @@
 <h3 id="Vision-Qualifier"><a href="#Vision-Qualifier" class="headerlink" title="Vision Qualifier"></a><strong>Vision Qualifier</strong></h3><p>When assessing the suitability of an application to be solved by machine vision, there are<br>certain economic and technical key issues to consider.</p>
 <h4 id="Investment-Incentive"><a href="#Investment-Incentive" class="headerlink" title="Investment Incentive"></a><strong>Investment Incentive</strong></h4><p>Vision systems are seldom off-the-shelf products ready for plug-and-play installation, more often they should be considered as project investments. The reason is that vision solutions almost always involve some level of programming and experimenting before the application is robust and operational.<br>The first step is thus to determine if there is a financial incentive or justification for an<br>investment. There are four main incentives for this investment:</p>
 <ol>
-<li>Reduced cost of labor: Manual labor is often more costly than vision systems.</li>
+<li><p>Reduced cost of labor: Manual labor is often more costly than vision systems.</p>
+</li>
 <li><p>Increase in production yield: The percentage of the produced products that are<br>judged as good-enough to be sold.</p>
 </li>
 <li><p>Improved and more even product quality: The actual quality of the sold products<br>through more accurate inspections. Even a skilled inspector can get tired and let<br>through a defect product after some hours of work.</p>
