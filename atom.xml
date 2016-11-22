@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://innote.github.io/"/>
-  <updated>2016-11-03T23:34:46.562Z</updated>
+  <updated>2016-11-22T02:05:11.208Z</updated>
   <id>http://innote.github.io/</id>
   
   <author>
@@ -14,6 +14,111 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vision Solution Principles</title>
+    <link href="http://innote.github.io/2016/11/22/Vision%20Solution/"/>
+    <id>http://innote.github.io/2016/11/22/Vision Solution/</id>
+    <published>2016-11-22T02:05:11.208Z</published>
+    <updated>2016-11-22T02:05:11.208Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Vision-Solution-Principles"><a href="#Vision-Solution-Principles" class="headerlink" title="Vision Solution Principles"></a><strong>Vision Solution Principles</strong></h2><p>Choosing and implementing machine vision technology involves the following questions:</p>
+<ol>
+<li>Is vision needed to do the job?</li>
+<li>Is there a financial incentive for investing in machine vision?</li>
+<li>Is the application solvable with vision?</li>
+<li>Which vision technology should be used?</li>
+<li>What does a typical vision project look like?</li>
+<li>What problems might be encountered along the way?</li>
+</ol>
+<h3 id="Standard-Sensors"><a href="#Standard-Sensors" class="headerlink" title="Standard Sensors"></a><strong>Standard Sensors</strong></h3><p>Vision is a powerful and interesting technology, but far from always<br>the best solution. It is important to keep in mind the vast possibilities with standard sensors and also the option of combining cameras with standard sensors. A simple solution that works is a preferable solution.</p>
+<h3 id="Vision-Qualifier"><a href="#Vision-Qualifier" class="headerlink" title="Vision Qualifier"></a><strong>Vision Qualifier</strong></h3><p>When assessing the suitability of an application to be solved by machine vision, there are<br>certain economic and technical key issues to consider.</p>
+<h4 id="Investment-Incentive"><a href="#Investment-Incentive" class="headerlink" title="Investment Incentive"></a><strong>Investment Incentive</strong></h4><p>Vision systems are seldom off-the-shelf products ready for plug-and-play installation, more often they should be considered as project investments. The reason is that vision solutions almost always involve some level of programming and experimenting before the application is robust and operational.<br>The first step is thus to determine if there is a financial incentive or justification for an<br>investment. There are four main incentives for this investment:</p>
+<ol>
+<li>Reduced cost of labor: Manual labor is often more costly than vision systems.</li>
+<li><p>Increase in production yield: The percentage of the produced products that are<br>judged as good-enough to be sold.</p>
+</li>
+<li><p>Improved and more even product quality: The actual quality of the sold products<br>through more accurate inspections. Even a skilled inspector can get tired and let<br>through a defect product after some hours of work.</p>
+</li>
+<li><p>Increase in production speed: The output can be increased wherever manual in-<br>spections are a bottleneck in the production.<br>The price of the vision system should be put in perspective of the investment incentive, i.e.<br>the combined effect of reduced labor and increase in yield, quality, and production speed.<br>A rule of thumb is that the total cost of low-volume applications are approximately twice<br>the hardware price, including the cost of integration.<br>Once the financial incentive is defined, a feasibility study can be considered.</p>
+</li>
+</ol>
+<h4 id="Application-Solvability"><a href="#Application-Solvability" class="headerlink" title="Application Solvability"></a><strong>Application Solvability</strong></h4><p><strong>Image quality</strong></p>
+<p>Having good contrast conditions and high-enough resolution is essential. A poor or variable<br>image quality can sometimes be compensated for by the use of algorithms, but developing<br>them is costly and robustness is an issue. In general, it is worthwhile to strive towards the<br>best-possible image quality before going on to the image processing.</p>
+<p>A key factor in building a robust vision application is to obtain good <strong>repeatability of object<br>representation regarding</strong>:</p>
+<ol>
+<li><p>Illumination</p>
+</li>
+<li><p>Object location and rotation</p>
+</li>
+</ol>
+<p>There are methods to deal with variations in these factors, but in general less variability<br>gives a more robust application. The optimal situation is a shrouded inspection station<br>with constant illumination where the object has a fixed position and rotation relative to the<br>camera.</p>
+<p><strong>Image Processing Algorithms</strong></p>
+<p>Having a good image addresses the first half of the solution. The next step is to apply<br>image processing algorithms or tools to do the actual analysis. Some vision systems are<br>delivered with a ready-to-use software or toolbox, whereas others need third-party algo-<br>rithms or even custom development of algorithms. This can have a heavy impact on the<br>project budget.</p>
+<h3 id="Vision-Project-Parts"><a href="#Vision-Project-Parts" class="headerlink" title="Vision Project Parts"></a><strong>Vision Project Parts</strong></h3><p>Once the application has qualified as a viable vision project, the phases that follow are:<br>Feasibility study, investment, implementation, and acceptance testing.</p>
+<h4 id="Feasibility-Study"><a href="#Feasibility-Study" class="headerlink" title="Feasibility Study"></a><strong>Feasibility Study</strong></h4><p>The purpose of a <strong>feasibility study</strong> is to determine if the problem can<br>be solved with vision or not. In the feasibility <strong>report</strong>, there is information about the application, what parts have been solved and how, and which problems and challenges can be expected if the application<br>becomes a project.<br>The feasibility study should either reach <strong>proof-of-concept</strong> (meaning “Yes, we can solve the<br>application”), identify why the application is not solvable, or state which further information<br>is needed before proof-of-concept can be reached.</p>
+<h4 id="Investment"><a href="#Investment" class="headerlink" title="Investment"></a><strong>Investment</strong></h4><p>Once the feasibility study is complete, it’s time for the <strong>investment decision</strong> and the <strong>project definition</strong>. The project definition should contain a full description of what the vision system shall do and how it will perform. A procedure for acceptance testing should be included.</p>
+<h4 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a><strong>Implementation</strong></h4><p>The <strong>implementation</strong> is the practical work of building the system. The contents and extent of the implementation phase may vary from a partial to a complete solution. Implementation is often called <strong>integration</strong>. When a company provides integration services, they are referred to as a <strong>system integrator</strong>. When vision is the integrator’s main business area, they are referred to as a vision integrator.</p>
+<h4 id="Commissioning-and-Acceptance-Testing"><a href="#Commissioning-and-Acceptance-Testing" class="headerlink" title="Commissioning and Acceptance Testing"></a><strong>Commissioning and Acceptance Testing</strong></h4><p>Once the implementation phase is completed, it is time for <strong>commissioning</strong> of the system, or handing it over to the customer. A part of the commissioning is an <strong>acceptance test</strong> according to the procedure<br>described in the project definition.</p>
+<p>The acceptance test description contains clear conditions of customer expectations of the<br>system. If the test is passed, the system is considered to be completed or delivered.</p>
+<h3 id="Application-Solving-Method"><a href="#Application-Solving-Method" class="headerlink" title="Application Solving Method"></a><strong>Application Solving Method</strong></h3><p>The general method for solving a vision application consists of the following steps: Defining the task, choosing hardware, choosing image processing tools, defining a result output, and testing the application. Some iteration is usually needed before a final solution is reached.</p>
+<h4 id="Defining-the-Task"><a href="#Defining-the-Task" class="headerlink" title="Defining the Task"></a><strong>Defining the Task</strong></h4><p>Defining the task is essentially to describe exactly what the vision system shall do, which<br>performance is expected, and under which circumstances.</p>
+<p>It is instrumental to have <strong>samples</strong> and knowledge about the industrial site where the<br>system will be located. The collection of samples needs to be representative for the full<br>object variation, for example including good, bad, and limit cases.</p>
+<p>In defining the task, it is important to decide how the inspected features can be param-<br>eterized to reach the desired final result.</p>
+<h4 id="Choosing-Hardware"><a href="#Choosing-Hardware" class="headerlink" title="Choosing Hardware"></a><strong>Choosing Hardware</strong></h4><p>The steps for selecting system hardware are:</p>
+<ol>
+<li><p>The type of object and inspection determine the choice of camera technology.</p>
+</li>
+<li><p>The object size and positioning requirements determine the FOV.</p>
+</li>
+<li><p>The smallest feature to be detected and the FOV size determine the resolution.</p>
+</li>
+<li><p>The FOV and the object distance determine the lens’ focal length (See the Ap-<br>pendix for explanations and example calculations of needed focal length.)</p>
+</li>
+<li><p>The type of inspections and the object’s environment determine the choice of<br>lighting.</p>
+</li>
+<li><p>The type of result to be delivered (digital I/O, Ethernet, etc) determines the choice<br>of cables and other accessories.</p>
+</li>
+<li><p>The choice of camera and lighting determines the mounting mechanics.<br>The above list is just a rough outline. Arriving at a well-defined solution requires practical<br>experience and hands-on testing.<br>When standard hardware is not sufficient for the task, a customization might be needed.</p>
+</li>
+</ol>
+<h4 id="Choosing-Image-Processing-Tools"><a href="#Choosing-Image-Processing-Tools" class="headerlink" title="Choosing Image Processing Tools"></a><strong>Choosing Image Processing Tools</strong></h4><p>In choosing the processing tools for a certain application, there are often a number of<br>possibilities and combinations. How to choose the right one? This requires practical experience and knowledge about the available tools for the camera system at hand.</p>
+<h4 id="Defining-a-Result-Output"><a href="#Defining-a-Result-Output" class="headerlink" title="Defining a Result Output"></a><strong>Defining a Result Output</strong></h4><p>The next step is to define how to <strong>communicate the result</strong>, for example to a PLC, a data-<br>base, or a sorting machine. The most common output in machine vision is pass/fail.</p>
+<h4 id="Testing-the-Application"><a href="#Testing-the-Application" class="headerlink" title="Testing the Application"></a><strong>Testing the Application</strong></h4><p>The application is not finished until it has been tested, debugged, and pushed to its limits.<br>This means that the system function must be tested for normal cases as well as a number<br>of less frequent but possible cases, for example:</p>
+<ol>
+<li><p>Ambient light fluctuations, reflections, sunshine through a window, etc.</p>
+</li>
+<li><p>Close to the acceptance limit for good and bad.</p>
+</li>
+<li><p>The extremes of accepted object movement in the FOV.</p>
+</li>
+</ol>
+<h3 id="Challenges"><a href="#Challenges" class="headerlink" title="Challenges"></a><strong>Challenges</strong></h3><p>During the feasibility study and implementation of a vision application there are some challenges<br>that are more common than others.</p>
+<p>This section treats typical bottlenecks and pitfalls<br>in vision projects.</p>
+<h4 id="Defining-Requirements"><a href="#Defining-Requirements" class="headerlink" title="Defining Requirements"></a><strong>Defining Requirements</strong></h4><p>It can be a challenge to define the task so that all involved parties have the same expectations of system performance. The customer has the perspective and terminology of his or her industry, and so does the vision supplier. Communication between both parties may require that each share their knowledge. To formalize clear <strong>acceptance test conditions</strong> is a good way of communicating the expectations of the system.</p>
+<h4 id="Performance"><a href="#Performance" class="headerlink" title="Performance"></a><strong>Performance</strong></h4><p>The <strong>cycle time</strong> can become a critical factor in the choice of camera system and algorithms<br>when objects are inspected at a high frequency. This situation is typical for the packaging<br>and pharmaceutical industries.</p>
+<p><strong>Accuracy</strong> is the repeatability of measurements as compared to a reference value or<br>position (measure applications). </p>
+<p><strong>Success rate</strong> is the system’s reliability in terms of <strong>false OKs</strong> and <strong>false rejects</strong> (inspect<br>and identify applications). A false OK is when a faulty object is wrongly classified as OK,<br>and a false reject is when an OK object is wrongly classified as false. It is often important<br>to distinguish between the two aspects, since the consequences of each can be totally<br>different in the production line.</p>
+<h4 id="System-Flexibility"><a href="#System-Flexibility" class="headerlink" title="System Flexibility"></a><strong>System Flexibility</strong></h4><p>Building a vision system that performs one task in a constant environment can be easy.<br>However, the system’s <strong>complexity</strong> can increase significantly when it shall inspect variable<br>objects in a variable environment.</p>
+<p>Worth keeping in mind is that objects that are very similar in the mind of their producer<br>can be totally different from a vision perspective. It is common to expect that since the<br>vision system inspects object A with such success, it must also be able to inspect objects<br>B and C with the same setup since they are “so similar”.</p>
+<h4 id="Object-Presentation-Repeatability"><a href="#Object-Presentation-Repeatability" class="headerlink" title="Object Presentation Repeatability"></a><strong>Object Presentation Repeatability</strong></h4><p>The <strong>object presentation</strong> is the object’s appearance in the image, including position,<br>rotation, and illumination. With high repeatability in the image, the application solving can<br>be easy. On the other hand, the application solving may become difficult or even impossi-<br>ble for the very same object if its presentation is arbitrary.</p>
+<p>For example, <strong>rotation invariance</strong> (360 degree rotation tolerance) in a 2D application is<br>more demanding on the processing than a non-rotating object. In 3D, rotation invariance<br>might not even be possible for some objects because of occluded features.</p>
+<h4 id="Mechanics-and-Environment"><a href="#Mechanics-and-Environment" class="headerlink" title="Mechanics and Environment"></a><strong>Mechanics and Environment</strong></h4><p>Although a vision system can be a technically optimal solution, sometimes there is not<br>enough <strong>mounting space</strong>. Then one must consider an alternative solution or redesign of<br>the machine.</p>
+<p>Some industries have environments with <strong>heat, vibrations, dust, and humidity concerns</strong>.<br>Such conditions can have undesirable side-effects: Reduced hardware performance, life,<br>and deteriorated image quality (blur). Information about the hardware’s ability to withstand<br>such conditions is found in its technical specifications.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Vision-Solution-Principles&quot;&gt;&lt;a href=&quot;#Vision-Solution-Principles&quot; class=&quot;headerlink&quot; title=&quot;Vision Solution Principles&quot;&gt;&lt;/a&gt;&lt;strong&gt;
+    
+    </summary>
+    
+      <category term="Vision" scheme="http://innote.github.io/categories/Vision/"/>
+    
+    
+      <category term="AOI, Vision" scheme="http://innote.github.io/tags/AOI-Vision/"/>
+    
+  </entry>
   
   <entry>
     <title>Halloween 2016</title>
